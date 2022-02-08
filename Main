@@ -19,7 +19,7 @@
 
 93. trying to edit html content on the index page and not being able to find the template until you go through 10 scripts (gotta love horde).
 
-92. No comments.
+92. No comment.
 
 91. You lose track of what include to use for what functions.
 
@@ -33,7 +33,7 @@
 
 86. Everything looks the same, as in: 
 Top of page: 
-include "include.php"; 
+include "include.php":
 include "include1.php": 
 include "include2.php":
 
