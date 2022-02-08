@@ -1,0 +1,249 @@
+100 Signs that I May Be Writing Spaghetti Code
+-----------------------------------------------------------------------
+
+
+
+100. I have no idea where this constant is defined.
+
+99. I have echo stmts littered throughout my code.
+
+98. There is an error but it isn't handled, and I can't find it to figure out what's wrong.
+
+97. Spelling 'referer' wrong everywhere so it matches the PHP $HTTP_REFERER syntax and then adding a comment everywhere it's used so everyone knows you did it on purpose.
+
+96. Passing variables directly to 635 functions and using 'global' on 453 functions.
+
+95. I have to modify the same function 10 times because I have not moved it into an include script...yet.
+
+94. Finding out that the 2 libraries you need to include also happen to include each other
+
+93. trying to edit html content on the index page and not being able to find the template until you go through 10 scripts (gotta love horde).
+
+92. No comments.
+
+91. You lose track of what include to use for what functions.
+
+90. You edit an include and realize you've already written that function or something very similar...somewhere.
+
+89. Opening and closing tags for an element like <p>, <table>, etc are in different files.
+
+88. Can't find the include file anywhere in the folder I am examining.
+
+87. Includes? What are includes? (This is a corollary to 91).
+
+86. Everything looks the same, as in: 
+Top of page: 
+include "include.php"; 
+include "include1.php": 
+include "include2.php":
+
+85. I find that rewriting is quicker and easier than modifying the original design.
+
+84. You have a library of small functions that you wrote yourself, and will cut'n'paste them into almost every project you work on... Whether they're needed or not...
+
+82. I'm at that precipice where I suddenly realize that the whole application would be a lot better if I made a certain change - a fundamental change - one that would allow me to streamline my code, perhaps combine functions, and save me time and hassle later on. But it requires me to dump a day's (or more) work and because of a lack of time - I press on and ignore it.
+
+81. Every time you want to change a variable you have to use grep to find it ;)
+
+80. you have so many "for" loops you've declared a variable for each letter in the alphabet.
+
+79. Dreamweaver starts to lag when you open the file.
+
+78. You realize there is no possible way to unwind your cross included files and in your great wisdom you used include and require. You now have to replace all of them with include_once and require_once just to stop the contamination.
+
+77. there are enough "if" statements to make you scroll to the right.
+
+76. Your GET query string is so long it can crash a browser.
+
+75. Your class object includes are stored on a single server and aliased on all your webservers...but you don't know which server those files are REALLY on anymore.
+
+74. You curse at your co-worker's terrible logic just before you realise you wrote that code last week.
+
+73. You see comments in the code that read something like: 
+Your Name: Don't ask me how or why this works, I know it looks overly complex and it appears there IS a simpler solution, but this works, it fixed a bug from the 'simpler code'...just leave it be...don't touch it, I've hired a voodoo witch doctor to place a curse on anybody who alters this code...trust me, just leave it alone!
+
+72. Following on from 81 - you know you're digging through a bowl of the stuff when, as a regular tool, you're using the windoz's search feature to find functions, variables and other bits of code.
+
+71. Following of from 80 and 77 - having to "peel" your way through while/for loops and a chunks of IF and ELSE statements because the original author (probably in all his haste) couldn't be bothered to use brackets. The code works but not always for the right reasons.
+
+70. out of the 50 arrays used 49 are 3 dimensional.
+
+69. You crash your SQL server more then 5 times while testing your queries
+
+68. After uploading your scripts to the server you find that you've exceded your allotted bandwidth for the month
+
+67. I use every imaginable variation of the word "foobar" in variable names
+
+66. My enter key doesn't work, so I just put everything on one line, it works anyways.
+
+65. [editor note: This one is not so much a sign, as an example. See Message #35].
+
+64. You're not using Python instead. ;)
+
+63. Some functions work even though you know they shouldn't as you haven't finished them yet. Being unable to make them fail as expected, you are left with only one conclusion: your code has spontaneously become self-aware - and worse, it *knows* you want to shut it down...
+
+62. You sit down, open your PHP script, and wonder where to begin with debugging... (ooh boy, I know the feeling of that!)
+
+61. Your final page doesn't validate. You look at the HTML source and see the problem clearly, but you decide not to fix it because you have no idea where this output comes from.
+
+60. When you have to grep for a var from / because you have no idea where in your directory structure the file is, all you know is it is above the root of the site. (I've had to do this a few times)
+
+59 - When a simple HELLO WORLD takes up 40 lines of code...
+
+58. Nothing like throwing in a hierarchy of javascripts that are all dependent on each other. Something along the lines of "this script must be defined after variables hd,hm and hy are defined".
+
+57. You find comments like this in your code: 
+This code, while convoluted and apparantly redundant fixes a bug in a M$ dll/function/object/etc.
+
+56. When every time the boss and artist come walking through the door, you know you are going to have to change 50 lines of code.
+
+55. You wrap it up and realize that there are 20 funtions in the include files which are never called, although at some point, they were all required.
+
+54. The project scope continues to creep, but the timeline scope continues to deminish (don't care who you are, if you are keeping up with that, you are hacking dough)
+
+53. You are using database structure changes in the middle of the project
+
+52. In an attempt to same time, you are making system calls for OS functions.
+
+51. Changing database is (e.g MS SQL to MySQL) requires the rewrite of SQL statments.
+
+50. There is HTML in your functions. (this is a little debatable, but it is a watch sign for me). [editor wants to change this to: 50. Your functions output HTML directly (either through switching out of PHP or via echo)].
+
+49. On the weekend you find yourself testing the effects of gzip on include files.
+
+48. The white board in your office is clean.
+
+47. You've run out of meaningful variable names, and you are now reduced to using the names of family pets.
+
+46. The ratio between the number of variable names, and the number of field names in the database, is 5 to 1
+
+45. You realize that the only differance between three functions is the number of variables being passed.
+
+44. You realize that you are changing global variables with functions inside include files
+
+43. Your SQL statments have SELECT * in them
+
+42. You know that the algorythm you just created to check the data coming back from the database is a O((N2 -N)/2) .. but you just don't care anymore.
+
+41. While writing a new function, you are background thinking justifications for the last one you just wrote.
+
+40: You surf over to WW to see how many queries per page others dare to use & scoff at the low number.
+
+39: you plan your vacation using if-else complete with curly brackets.
+
+38. You've worn paint off the "$" and "4" key on your keyboard.
+
+37. You are using classes, but create a "miscellaneous" class where you put all those odds and ends. Finally you realize the "misc" class has become your main class and needs to be included in every script.
+
+36. You create a separate class for every single function.
+
+35. You have an include file called "stuff.inc"
+
+34. Your for loop pops a query and sends the results to a funtion, which runs a for loop across the array you sent with the results from the query, sending the 3, 5 and 10 cells to seperate funtions, and formats the htmml for the 1, 2, 4, 5, 6, 7, 9 values of the array, sending those to a function, which has a for loop, ...
+
+33. You have come up with 5 blistering hot ideas for the program you are working on, which have taken you the last 3 weeks to bring to reality, only to find, now that they are all working, and they work even better than you could have imagined 3 weeks ago, they also block the original functionality of the program spec, and are in conflict with the main idea of the client.
+
+32. Your hands are bruised and cut from the shards of exploding classes after hours of trying to shove the client’s feature requests, into your well thought out architecture.
+
+31. You have no idea what a CRC Card is ...
+
+31. You don't understand classes.
+
+31. You can't count down from 100.
+
+30. You know someone else is writing spaghetti code when.... you find 
+if (1==0) { 
+... 
+}
+
+29. When you have more cases then a court house
+
+28: reading this list you think.. "Hmmm what's so bad about that? Or that? Or that?
+
+27. Infinitely cascading includes like: 
+
+index.php: 
+<?php include("menu.php");?> 
+... 
+menu.php: 
+<?php include("navigation.php");?> 
+... 
+navigation.php: 
+<?php include("newmenu.php");?> 
+... 
+newmenu.php: 
+<?php include("newmenu_final.php");?> 
+... 
+newmenu_final.php: 
+<?php include("menu_newer_version.php");?> 
+... etc 
+
+26. if your included file "stuff.inc" has become deprecated in favour of "newer-stuff.inc"
+
+25. Parse error: parse error in /home/index.php on line 140 
+20 minutes later 
+Parse error: parse error in /home/index.php on line 141 
+20 minutes later 
+Parse error: parse error in /home/index.php on line 142
+
+24. When the first line of your code is: 
+ini_set(max_execution_time,"99999");
+
+23. And the last line of your codes is: 
+ini_set(max_execution_time,"30");
+
+22. When you open the same db 11 times in the same file.
+
+21. When you have to do your includes in a page being called as in mypage.php?page=somedullpage.
+
+20. You include a file that includes the original file... 
+<!-- file1.php --> 
+<? include("file2.php"); //other stuff?>
+<!-- file2.php --> 
+<? echo "stuff"; include("file1.php");?>
+
+
+19. You have so many custom fucntions that you try to redifine the nl2br function
+
+18. You have so many custom functions that the WhatDoTheseFunctionsDo.txt file is 20MB
+
+17. Your kids understand the code...after college.
+
+16. You have to grep for all occurences of include() or require() and replace them with include_once() and require_once() just to get your app to run.
+
+15. You're still using extract, cause well, those security folks are all just anal anyways.
+
+14. You need to write a Perl script to check your PHP code.
+
+13. When your orignal project was to recreate a windows desktop application in php/html/javascript to run on windows desktops.
+
+12.You start trying to recreat a windows app with php...and end up making another form to e-mail app.
+
+11. You realise you have three functions with the exactly the same name, but which do completely different things, scattered across several includes.
+
+10. When your control script forgets that it is handling the return from one of many scripts it calls and re initializes all the vars... and you don't figure it out for a month.
+
+9. You have read through this whole thread so far and said to yourself "I don't do any of those" and patted yourself on the back.
+
+8. You've read this whole thread and patted yourself on the back for only doing half of them.
+
+7. You post your code to WW looking for some answers and the responses run longer then the Google update threads.
+
+6. goto 5.
+
+5. GOSUB 100:REM In case we missed anything on the first pass...
+
+4. 
+if ($status == "awake"){ 
+$actitivity = "Writing spaghetti code"; 
+}elseif($healthstatus == "OK"){ 
+$activity = "Sleep"; 
+}else{ 
+print "CALL 911 IMMEDIATELY!"; 
+}
+
+3. You work alone, but have to use CVS to keep track of your project.
+
+2. You took over a project that was so convoluted you had to just scrap it and start over. Now, after three weeks, you find you have the exact same directory structure as the original and most filenames are the same.
+
+1. You've been watching this thread the entire time and haven't thought of a single thing you could add.
